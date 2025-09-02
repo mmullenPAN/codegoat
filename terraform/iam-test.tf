@@ -22,6 +22,9 @@ resource "aws_iam_policy" "policy_resource_fail" {
       }
     ]
   })
+  tags = {
+    Privacy = ""
+  }
 }
 
 resource "aws_iam_policy" "policy_resource_pass" {
@@ -48,6 +51,9 @@ resource "aws_iam_policy" "policy_resource_pass" {
       }
     ]
   })
+  tags = {
+    Privacy = ""
+  }
 }
 
 data "aws_iam_policy_document" "policy_data_fail" {
